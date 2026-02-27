@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SBO Lost & Found System</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      text-align: center;
+    }
+
+    header {
+      background: #084e24;
+      color: white;
+      padding: 25px 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .red { background: #c0392b; }
+    .green { background: #27ae60; }
+    .blue { background: #1f4e79; }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #eaeef2;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>SBO Lost & Found System</h1>
+    <p>Report lost items or submit found items easily.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="cards">
+
+      <div class="card">
+        <h2 style="color:#c0392b;">🔍 Report Lost Item</h2>
+        <p>Lost something? Let us know the details.</p>
+        <a class="btn red" href="https://forms.gle/3ayC9u7byBgqW11X6" target="_blank">
+          Report Lost Item
+        </a>
+      </div>
+
+      <div class="card">
+        <h2 style="color:#27ae60;">📦 Report Found Item</h2>
+        <p>Found something? Help return it to the owner.</p>
+        <a class="btn green" href="https://forms.gle/QhpsKYX1VfYAvvKQ6" target="_blank">
+          Report Found Item
+        </a>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2 style="color:#1f4e79;">📋 View Submitted Reports</h2>
+      <p>You can check if your item has been reported.</p>
+      <a class="btn blue" href="https://docs.google.com/spreadsheets/d/1Ln-nMyrRPZdM2WQ9tvMc10DVU2vqUCxeRXictKMSGaU/edit?usp=sharing" target="_blank">
+        View Reports
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    SBO Lost & Found System • Helping return items to their owners
+  </footer>
+
+</body>
+</html>
